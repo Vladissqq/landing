@@ -1,0 +1,40 @@
+.header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 90px;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__link div {
+    margin-right: 15px;
+}
+
+.nav__link a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #A29FAB;
+}
+
+.nav__signin {
+    text-align: center;
+    width: 81px;
+    padding: 3px;
+    opacity: 0.26;
+    border: 2px solid #979797;
+    box-sizing: border-box;
+    border-radius: 15.5px;
+}
+
+.nav__icon {
+    margin-right: 12px;
+}

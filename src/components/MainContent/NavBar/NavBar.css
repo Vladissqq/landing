@@ -1,0 +1,26 @@
+.content_nav__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 60px;
+}
+
+.content_nav__link_item {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #161a23;
+}
+
+.content_nav__link_item:hover {
+    background: #ffffff;
+    color: #e619c1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
