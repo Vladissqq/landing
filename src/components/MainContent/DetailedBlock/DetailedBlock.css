@@ -41,6 +41,10 @@
     color: #a29fab;
 }
 
+.navigation__icon {
+    padding-right: 10px;
+}
+
 .grid {
     margin-right: 26px;
     display: grid;

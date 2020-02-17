@@ -2,6 +2,7 @@ import React from "react";
 import "./DetailedBlock.css";
 import Slider from "./Slider";
 import Rating from "./Rating";
+import { ReactComponent as IconGreece } from "./pics/greece.svg";
 import { ReactComponent as Icon1 } from "./pics/icon1.svg";
 import { ReactComponent as Icon2 } from "./pics/icon2.svg";
 
@@ -11,7 +12,7 @@ export default function DetailedBlock() {
       <div className="slider_container">
         <Slider />
       </div>
-      <div className="description_container">
+      <aside className="description_container">
         <h2 className="description__header">
           Тур в отель Gelina Village Hotel Resort&Spa
         </h2>
@@ -20,7 +21,10 @@ export default function DetailedBlock() {
           <Rating />
         </div>
         <div className="description__navigation">
-          <div>Греция > Пелопоннес-Илия </div>
+          <div>
+            <IconGreece className="navigation__icon" />
+            Греция > Пелопоннес-Илия
+          </div>
           <div>Нет такого тура ?</div>
         </div>
         <div className="grid">
@@ -59,7 +63,7 @@ export default function DetailedBlock() {
             <div className="grid_box4_description">Цена за человека</div>
           </div>
         </div>
-      </div>
+      </aside>
       <div className="main_description">ООО «АЭРОТРЕВЕЛ»</div>
       <div className="main__buttons">
         <button className="main__button grey">Заказать тур</button>

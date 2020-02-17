@@ -5,6 +5,15 @@ import { ReactComponent as Pic2 } from "./pics/pic2.svg";
 import { ReactComponent as Pic3 } from "./pics/pic3.svg";
 import { ReactComponent as Pic4 } from "./pics/pic4.svg";
 
+const LinkWithIcon = ({ icon, href, text }) => {
+  return (
+    <div>
+      {icon}
+      <a href={href}>{text}</a>
+    </div>
+  );
+};
+
 export default function Header() {
   return (
     <header className="header">
@@ -13,22 +22,26 @@ export default function Header() {
         <a href="#">Контакты</a>
       </nav>
       <nav className="nav__link">
-        <div>
-          <Pic1 className="nav__icon" />
-          <a href="#">Блог</a>
-        </div>
-        <div>
-          <Pic2 className="nav__icon" />
-          <a href="#">Путеводитель</a>
-        </div>
-        <div>
-          <Pic3 className="nav__icon" />
-          <a href="#">Попутчики</a>
-        </div>
-        <div>
-          <Pic4 className="nav__icon" />
-          <a href="#">Отдых в Беларуси</a>
-        </div>
+        <LinkWithIcon
+          icon={<Pic1 className="nav__icon" />}
+          href={"#"}
+          text={"Блог"}
+        />
+        <LinkWithIcon
+          icon={<Pic2 className="nav__icon" />}
+          href={"#"}
+          text={"Путеводитель"}
+        />
+        <LinkWithIcon
+          icon={<Pic3 className="nav__icon" />}
+          href={"#"}
+          text={"Попутчики"}
+        />
+        <LinkWithIcon
+          icon={<Pic4 className="nav__icon" />}
+          href={"#"}
+          text={"Отдых в Беларуси"}
+        />
       </nav>
       <nav className="nav__link">
         <a className="nav__signup" href="#">

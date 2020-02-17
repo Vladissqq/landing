@@ -1,24 +1,22 @@
 import React from "react";
 import "./NavBar.css";
 
+const Link = ({ text, href }) => {
+  return (
+    <a className="content_nav__link_item" href={href}>
+      {text}
+    </a>
+  );
+};
+
 export default function NavBar() {
   return (
     <nav className="content_nav__link">
-      <a className="content_nav__link_item" href="#">
-        Туры
-      </a>
-      <a className="content_nav__link_item" href="#">
-        Визы
-      </a>
-      <a className="content_nav__link_item" href="#">
-        Отели
-      </a>
-      <a className="content_nav__link_item" href="#">
-        Авиабилеты
-      </a>
-      <a className="content_nav__link_item" href="#">
-        Турфирмы
-      </a>
+      <Link href={"#"} text={"Туры"} />
+      <Link href={"#"} text={"Визы"} />
+      <Link href={"#"} text={"Отели"} />
+      <Link href={"#"} text={"Авиабилеты"} />
+      <Link href={"#"} text={"Турфирмы"} />
     </nav>
   );
 }
