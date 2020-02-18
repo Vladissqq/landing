@@ -1,12 +1,12 @@
 import React from "react";
 import "./DetailedBlock.css";
 import Slider from "./Slider";
-import Rating from "./Rating";
+import { Rating } from "./RatingHooks";
 import { ReactComponent as IconGreece } from "./pics/greece.svg";
 import { ReactComponent as Icon1 } from "./pics/icon1.svg";
 import { ReactComponent as Icon2 } from "./pics/icon2.svg";
 
-export default function DetailedBlock() {
+export const DetailedBlock: React.FC = () => {
   return (
     <div className="main_container">
       <div className="slider_container">
@@ -71,4 +71,4 @@ export default function DetailedBlock() {
       </div>
     </div>
   );
-}
+};

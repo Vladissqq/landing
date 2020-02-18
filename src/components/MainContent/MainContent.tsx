@@ -1,8 +1,8 @@
 import React from "react";
 import "./MainContent.css";
-import NavBar from "./NavBar/NavBar";
-import DetailedBlock from "./DetailedBlock/DetailedBlock";
-import ContactsBlock from "./ContactsBlock/ContactsBlock";
+import { NavBar } from "./NavBar/NavBar";
+import { DetailedBlock } from "./DetailedBlock/DetailedBlock";
+import { ContactsBlock } from "./ContactsBlock/ContactsBlock";
 
 export default function MainContent() {
   return (

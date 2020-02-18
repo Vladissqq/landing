@@ -4,7 +4,7 @@ import { ReactComponent as Tg } from "./pics/telega.svg";
 import { ReactComponent as Viber } from "./pics/viber.svg";
 import { ReactComponent as Whatsapp } from "./pics/wazap.svg";
 
-export default function ContactsBlock() {
+export const ContactsBlock: React.FC = () => {
   return (
     <div className="contacts_container">
       <div className="address_container contacts_block">
@@ -31,11 +31,11 @@ export default function ContactsBlock() {
         </div>
         <div className="offers_links">
           <div className="offers_links__description">Больше туров на сайте</div>
-          <a className="offers_links__link" href="#">
+          <a className="offers_links__link" href="/">
             airtravel.by
           </a>
         </div>
       </div>
     </div>
   );
-}
+};

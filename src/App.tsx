@@ -1,16 +1,16 @@
 import React from "react";
 
-import Header from "./components/Header/Header";
+import { Header } from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import "./App.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <MainContent />
     </div>
   );
-}
+};
 
 export default App;
